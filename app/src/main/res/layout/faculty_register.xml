@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/register_main"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:padding="25dp">
+
+        <!--android:background="@drawable/registration_background"-->
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/Register_tv"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:text="Register"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <EditText
+                android:gravity="center_horizontal"
+                android:hint="User Name"
+                android:id="@+id/unm"
+                android:inputType="text"
+                android:layout_below="@+id/Register_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:id="@+id/pwd"
+                android:inputType="textPassword"
+                android:layout_below="@+id/unm"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:gravity="center_horizontal"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/pwd"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:gravity="center_horizontal"
+                android:hint="Mobile No."
+                android:id="@+id/mno"
+                android:inputType="phone"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textStyle="normal"/>
+
+            <Button
+                android:background="@drawable/register_button"
+                android:id="@+id/register_button"
+                android:layout_below="@id/mno"
+                android:layout_centerHorizontal="true"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:onClick="register"
+                android:text="REGISTER"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:background="@drawable/faculty_register_icon"
+        android:id="@+id/view_1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="50dp"/>
+</RelativeLayout>

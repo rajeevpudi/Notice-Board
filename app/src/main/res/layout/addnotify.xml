@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="Enter Notification"
+        android:id="@+id/notification"
+        android:inputType="text"
+        android:layout_height="300dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:lines="5"
+        android:padding="5dp"/>
+
+    <Button
+        android:background="@drawable/register_button"
+        android:id="@+id/add"
+        android:layout_below="@+id/mno"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:onClick="addNotification"
+        android:text="ADD"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+</LinearLayout>
